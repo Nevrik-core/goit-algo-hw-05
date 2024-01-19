@@ -34,7 +34,6 @@ class HashTable:
         if self.table[key_hash] is not None:
             for i in range(len(self.table[key_hash])):
                 if self.table[key_hash][i][0] == key:
-                    print(f"{self.table[key_hash][i]} видалено")
                     self.table[key_hash].pop(i)
                     return True
         return False
